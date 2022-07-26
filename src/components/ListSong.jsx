@@ -25,7 +25,7 @@ export default function ListSong() {
             </thead>
             <tbody>
                 { DataSongs.map((song, index) => (
-                <tr key={index} className={`hover:from-cyan-400 bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-400 h-12 ${idSong === song.id && 'text-white'}`}
+                <tr key={index} className={`hover:from-green-300 hover:to-green-400 bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-400 h-12 ${idSong === song.id && 'text-white'}`}
                 onClick={() => handlePlaySong(song.id)}>
                     <td className='text-center'>{index + 1}</td>
                     <td>{song.name}</td>
