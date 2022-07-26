@@ -16,7 +16,7 @@ export default function Playing() {
   return (
     <div>
       <AudioPlayer
-        className="player-music bg-gradient-to-r from-cyan-400 via-violet-400 to-red-400"
+        className="player-music bg-gradient-to-r from-cyan-400 via-violet-400 to-red-300"
         src={song.url}
         layout="stacked-reverse"
         showSkipControls={true}
