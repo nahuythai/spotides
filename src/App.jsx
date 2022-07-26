@@ -19,7 +19,7 @@ function App() {
     <>
     <Songs.Provider value={{DataSongs, song, handleSetSong}}>
       <Navbar />
-          <div className="grid grid-cols-3 h-screen-navbar-player bg-indigo-400">
+          <div className="grid grid-cols-3 h-screen-navbar-player">
             <DetailSong />
             <ListSong />
           </div>

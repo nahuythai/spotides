@@ -15,7 +15,7 @@ export default function ListSong() {
   return (
     <div className='col-span-2 overflow-y-scroll'>
         <table className='table-auto w-full'>
-            <thead className='text-white h-12'>
+            <thead className='text-white h-12 bg-gradient-to-r from-cyan-700 to-indigo-900'>
                 <tr>
                     <th>#</th>
                     <th className='text-left'>Title</th>
@@ -25,7 +25,7 @@ export default function ListSong() {
             </thead>
             <tbody>
                 { DataSongs.map((song, index) => (
-                <tr key={index} className={`bg-violet-300 hover:bg-violet-600 h-12 ${idSong === song.id && 'text-violet-900'}`}
+                <tr key={index} className={`hover:from-cyan-400 bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-400 h-12 ${idSong === song.id && 'text-white'}`}
                 onClick={() => handlePlaySong(song.id)}>
                     <td className='text-center'>{index + 1}</td>
                     <td>{song.name}</td>
